@@ -32,3 +32,11 @@ Edits to the scala source will automatically reload this page
 ## Production Version
 
 `sbt fullOptJS`
+
+
+## Notes
+
+ - 50 - 100 generations
+ - population of 300
+ - survival ratio - 1/5 (number of creatures that breed for next population). Random creatures added if less than 1/5 
+   with positive fitness
