@@ -11,6 +11,13 @@ instead of 3D)
  - SBT 0.13.12
 
 
+## Running Tests
+
+ - All: `sbt test`
+ - Individual: `sbt 'test-only org.danielholmes.evc2d.HelloWorldSpec'`
+ - Individual Continuous: `sbt ~'test-only org.danielholmes.evc2d.HelloWorldSpec'`
+
+
 ## Running in Development
 
 `sbt ~fastOptJS`

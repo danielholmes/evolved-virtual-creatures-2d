@@ -11,10 +11,11 @@ version := "0.1-SNAPSHOT"
 scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
-  "org.scala-js" %%% "scalajs-dom" % "0.9.1"
+  "org.scala-js" %%% "scalajs-dom" % "0.9.1",
+  "org.scalatest" % "scalatest_2.11" % "3.0.0" % "test"
 )
 
-bootSnippet := "example.ScalaJSExample().main(document.getElementById('canvas'));"
+bootSnippet := "org.danielholmes.evc2d.Main().main();"
 
 updateBrowsers <<= updateBrowsers.triggeredBy(fastOptJS in Compile)
 
